@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<link rel='stylesheet' href="{{url_for('static',filename='css/style1.css')}}">
+    </head>
+
+    <body>
+        <form method="post" action="Display.html">
+            <h1>
+                FILL THE DETAILS
+            </h1>
+            <div class="form-element">
+                <lable>
+                    Enter User Name :
+                </lable>
+                <input type="text" placeholder="User_Name" name="name"/>
+            </div>
+            <div class="form-element">
+                <lable>
+                    Enter User Email Id :
+                </lable>
+                <input type="email" placeholder="Email_Id" name="mail"/>
+            </div>
+           
+            <div class="form-element">
+                <button type="submit" >Submit</button>
+            </div>
+         
+        </form>
+    </body>
+</html>
