@@ -1,0 +1,14 @@
+*{
+    margin: 0px;
+    padding:0px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    background-image: linear-gradient(#A100FFFF, #119CFDFF);
+}
+.container{
+
+    border-radius: 10px;
+    margin: 280px 430px;
+}

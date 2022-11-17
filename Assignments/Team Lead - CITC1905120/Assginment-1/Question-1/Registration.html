@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="Registration.css" />
+        <script type="text/javascript" src="Registration.js"></script>
+    </head>
+
+    <body>
+        <form method="post" action="next.html">
+            <h1>
+                REGISTRATION FORM
+            </h1>
+            <div class="form-element">
+                <lable>
+                    Enter User Name :
+                </lable>
+                <input type="text" placeholder="User_Name" name="User_Name" id="User_Name"/>
+            </div>
+            <div class="form-element">
+                <lable>
+                    Enter User Email Id :
+                </lable>
+                <input type="email" placeholder="Email_Id" name="Email_Id" id="Email_Id"/>
+            </div>
+            <div class="form-element">
+                <lable>
+                    Enter User Phone Number :
+                </lable>
+                <input type="text" placeholder="Mobile_Number" name="Mobile_Number" id="Mobile_Number"/>
+            </div>
+            <div class="form-element">
+                <button type="submit" onclick="handleSubmit()">Submit</button>
+            </div>
+         
+        </form>
+    </body>
+</html>
