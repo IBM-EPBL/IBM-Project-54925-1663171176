@@ -1,0 +1,39 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Registration</title>  
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Registration.css') }}" />
+</head>    
+<body>    
+    <form action = "{{ url_for('Registration') }}" method = 'POST'>  
+        <div class="container">   
+            <label style="color:wheat;">Username : </label>   
+            <input type="text" placeholder="Enter User name" name="username" required>  
+        </br>
+            <label style="color:wheat;">Email Id : </label>   
+            <input type="password" placeholder="Enter Email Id" name="email_id" required>
+        </br>
+        <label style="color:wheat;">Password : </label>   
+        <input type="password" placeholder="Enter Password" name="password" required>
+         </br>
+            <label style="color:wheat;">Repeat Password : </label>   
+            <input type="password" placeholder="Enter Password Again" name="repeat_password" required> 
+        </br>
+        <div style = "font-size:20px; padding-left: 30px;">
+        <input type="checkbox" id="c1" name="c1" value="Business">
+        <label for="c1" style="color:wheat; padding-left: 70px;"> Business</label><br>
+        <input type="checkbox" id="c2" name="c2" value="Entertainmentr" >
+        <label for="c2" style="color:wheat; padding-left: 70px;"> Entertainment</label><br>
+        <input type="checkbox" id="c3" name="c3" value="Science" >
+        <label for="c3" style="color:wheat; padding-left: 70px;"> Science</label><br>
+        <input type="checkbox" id="c4" name="c4" value="Health">
+        <label for="c4" style="color:wheat; padding-left: 70px;"> Health</label><br>
+        <input type="checkbox" id="c5" name="c5" value="Technology" >
+        <label for="c5" style="color:wheat; padding-left: 70px;"> Technology</label><br>
+        </div>
+        <button type="submit">Sign Up</button>     
+        </div>   
+    </form>     
+</body>     
+</html>  
