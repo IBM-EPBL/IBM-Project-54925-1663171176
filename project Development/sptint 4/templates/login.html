@@ -1,0 +1,26 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> Login Page </title>  
+<link rel="stylesheet" href="{{ url_for('static', filename='css/login.css') }}" />
+</head>    
+<body>   
+    
+    <form action = "{{ url_for('login') }}" method = 'POST'>  
+        <div class="container">   
+            <label style="color:wheat;">Username : </label>   
+            <input type="text" placeholder="Enter Username" name="username" required>  
+        </br>
+            <label style="color:wheat;">Password : </label>   
+            <input type="password" placeholder="Enter Password" name="password" required>  
+             
+            
+        </br>
+            <button type="submit">Login</button>     
+</br>   
+         <!-- <p> Forgot <a href="#"> password? </a>   </p>   -->
+        </div>   
+    </form>     
+</body>     
+</html>  
